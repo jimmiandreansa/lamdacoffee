@@ -219,7 +219,8 @@ body {
 }
 
 .menu .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
@@ -232,7 +233,8 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 35%;
+  width: 150px;
+  height: 150px;
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -378,11 +380,13 @@ footer .credit a {
   }
 
   .about .row {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .about .row .about-img img {
-    height: 24rem;
+    height: 8px;
+    width: 8px;
     object-fit: cover;
     object-position: center;
   }
