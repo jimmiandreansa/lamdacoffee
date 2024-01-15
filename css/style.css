@@ -171,6 +171,7 @@ body {
 /* About Section */
 .about .row {
   display: flex;
+  gap: 32px;
 }
 
 .about .row .about-img {
@@ -422,8 +423,17 @@ footer .credit a {
 }
 
 /* Mobile */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .about .row {
+    background-color: red;
+    display: block;
+  }
+
+  .about .row .about-img img {
+    width: 100%;
   }
 }
